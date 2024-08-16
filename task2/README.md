@@ -4,7 +4,7 @@
 
 Below is the wireframe image that shows the requirement for creating a "nudge" for events or articles.
 
-![Wireframe](https://github.com/Athinamilagi/internship_task/task2/image.png)
+![Wireframe](https://github.com/Athinamilagi/internship_task/blob/main/task2/image.png)
 
 The above wireframe is used as a reference for designing the API structure required to create a nudge. The following documentation outlines the API structure, endpoints, and expected payloads for implementing the required functionality.
 
