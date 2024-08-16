@@ -1,4 +1,4 @@
-### API Documentation for Nudge Creation
+### Backend Internship Task 2 - API Documentation for Nudge Creation
 
 ## Question
 
@@ -15,7 +15,7 @@ This API is designed to allow users to create a "nudge" for events or articles. 
 #### **Base URL**
 
 ```
-https://api.yourdomain.com/v1
+https://nudge/v1
 ```
 
 #### **Endpoints**
@@ -138,20 +138,3 @@ https://api.yourdomain.com/v1
 
 - If the MongoDB connection fails, the API will return a `500 Internal Server Error` with an appropriate error message.
 - Validation errors will return a `400 Bad Request` status.
-
-### **Publishing Your Work**
-
-1. Once your repository is set up and your `README.md` is complete, make sure all files are committed and pushed to GitHub:
-
-   ```bash
-   git add .
-   git commit -m "Added API documentation and project details"
-   git push origin master
-   ```
-
-2. Share the GitHub repository link:
-   - Navigate to your repository on GitHub.
-   - Copy the URL from the browser's address bar.
-   - Share this link with your internship coordinator or whoever requested the project.
-
-This process ensures that your work is well-documented and easily accessible to anyone reviewing your project.
