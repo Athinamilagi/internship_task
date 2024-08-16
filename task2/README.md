@@ -15,14 +15,14 @@ This API is designed to allow users to create a "nudge" for events or articles. 
 #### **Base URL**
 
 ```
-https://nudge/v1
+https://nudge-creation/v1
 ```
 
 #### **Endpoints**
 
 1. **Create a Nudge**
 
-   - **URL:** `/nudge/create`
+   - **URL:** `{{base_url}}/nudge/create`
    - **Method:** `POST`
    - **Description:** Allows the user to create a new nudge.
    - **Payload:**
@@ -50,7 +50,7 @@ https://nudge/v1
 
 2. **Get All Nudges**
 
-   - **URL:** `/nudge`
+   - **URL:** `{{base_url}}/nudge`
    - **Method:** `GET`
    - **Description:** Retrieves all the nudges created by the user.
    - **Response:**
@@ -74,7 +74,7 @@ https://nudge/v1
 
 3. **Get Nudge by ID**
 
-   - **URL:** `/nudge/:id`
+   - **URL:** `{{base_url}}/nudge/:id`
    - **Method:** `GET`
    - **Description:** Retrieves a single nudge by its unique ID.
    - **Response:**
@@ -96,7 +96,7 @@ https://nudge/v1
 
 4. **Update a Nudge**
 
-   - **URL:** `/nudge/update/:id`
+   - **URL:** `{{base_url}}/nudge/update/:id`
    - **Method:** `PUT`
    - **Description:** Updates an existing nudge with new data.
    - **Payload:** Same as the "Create a Nudge" payload.
@@ -113,7 +113,7 @@ https://nudge/v1
 
 5. **Delete a Nudge**
 
-   - **URL:** `/nudge/delete/:id`
+   - **URL:** `{{base_url}}/nudge/delete/:id`
    - **Method:** `DELETE`
    - **Description:** Deletes an existing nudge by its ID.
    - **Response:**
@@ -125,15 +125,6 @@ https://nudge/v1
        }
      }
      ```
-
-#### **Steps to Do**
-
-1. Go through the wireframe in the image; it’s a page where a user can create a nudge for his/her event.
-2. Create an Object data model for the Nudge; you can use the above model for reference.
-3. Write documentation about how the API structure should be. The documentation should include the types of requests you want to perform, base URL, API Endpoints, Payload, and the description of the API.
-4. You can use the above table (Table 1) for reference.
-5. Write the documentation for the CRUD functionalities.
-
 #### **Error Handling**
 
 - If the MongoDB connection fails, the API will return a `500 Internal Server Error` with an appropriate error message.
